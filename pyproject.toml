@@ -1,0 +1,18 @@
+[project]
+name = "rh-gestao"
+version = "0.1.0"
+description = "Sistema completo de gestão de RH com ponto e geolocalização"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.116.0",
+  "uvicorn>=0.35.0",
+  "sqlalchemy>=2.0.40",
+  "pydantic>=2.10.0",
+  "email-validator>=2.2.0"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
